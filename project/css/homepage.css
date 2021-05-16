@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+}
+.whole{
+	position: absolute;
+}
+.headerbox{
+	border:1px solid red;
+	width: 280px;
+	padding-left: 20px;
+	position: fixed;
+}
+.header{
+	width:120px;
+	height: 145px;
+	position: relative;
+	border:1px solid red;
+}
+.webname{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 120px;
+	border:1px solid red;
+	font-family: "华文行楷";
+	color:#855f50;
+	text-shadow:3px 3px 5px #f0f0f0,-3px -3px 5px #f0f0f0;
+	font-size: 20px;
+}
+.login{
+	font-family: "宋体";
+	padding-top: 10px;
+	border: 1px red solid;
+	padding-left: 20px;
+	padding-top: 20px;
+
+}
+.login a{
+	color: #808080;
+	text-decoration: none;
+
+}
+.navigation{
+	list-style-type: none;
+	padding-left:20px;
+	font-size: 20px;
+	padding-top: 20px;
+	line-height: 200%;
+	letter-spacing: 0.1em;
+	
+}
+.navigation a{
+	text-decoration: none;
+	color: #855f50;
+}
+.navigation li ul{
+	display: none;
+	background: #fff;
+	border: 1px solid #beaaa2;
+	position: absolute;
+	left:150px;
+	top: 200px;
+	list-style-type:none; 
+}
+.navigation li ul li{
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+}
+.navigation li ul a{
+	padding: 0;
+}
+.navigation li:hover ul{
+	display: block;
+}
+.navigation li ul a:hover{
+	color:#fff;
+	background: #855f50;
+}
+.center{
+	border:1px solid red;
+	float: right; 
+	width: 1000px;
+	position: relative;
+	left: 325px;
+}
+
+
+
+
+
+/*页脚*/
+
+.content div{
+	border: 1px red solid;
+}
+.footer{
+	position: relative;
+	border: 1px solid red; 
+}
+.weixin{
+	width: 100px;
+}
+.message{
+	text-align: center;
+
+}
+
+
+/*广告栏*/
+.right{
+	width: 150px;
+	border: 1px red solid;
+	position: fixed;
+	left: 1350px;
+	height: 300px;
+	text-align: center;
+	overflow: auto;
+	font-size: 70px;
+	color: red;
+	top: 200px;
+}
