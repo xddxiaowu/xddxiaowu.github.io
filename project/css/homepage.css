@@ -1,43 +1,16 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-body{
-	
-}
-.whole{
-	position: absolute;
-}
-.headerbox{
-	border:1px solid red;
-	width: 280px;
-	padding-left: 20px;
-	position: fixed;
-}
-.header{
-	width:120px;
-	height: 145px;
-	position: relative;
-	border:1px solid red;
-}
-.webname{
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-	width: 120px;
-	border:1px solid red;
-	font-family: "华文行楷";
-	color:#855f50;
-	text-shadow:3px 3px 5px #f0f0f0,-3px -3px 5px #f0f0f0;
-	font-size: 20px;
+#leftside{
+	width: 240px;
+	margin-right: 10px;
+	float: left;
+	background: #fef7ee;
 }
 .login{
 	font-family: "宋体";
+	font-size: 35px;
 	padding-top: 10px;
-	border: 1px red solid;
-	padding-left: 20px;
+	padding-left: 30px;
 	padding-top: 20px;
-
+	padding-bottom: 20px;
 }
 .login a{
 	color: #808080;
@@ -46,11 +19,12 @@ body{
 }
 .navigation{
 	list-style-type: none;
-	padding-left:20px;
-	font-size: 20px;
-	padding-top: 20px;
+	list-style-image: url(../images/nav.svg);
+	padding-left:30px;
+	font-size: 25px;
 	line-height: 200%;
 	letter-spacing: 0.1em;
+	text-align: left;
 	
 }
 .navigation a{
@@ -60,16 +34,16 @@ body{
 .navigation li ul{
 	display: none;
 	background: #fff;
-	border: 1px solid #beaaa2;
 	position: absolute;
-	left:150px;
-	top: 200px;
+	left:-130px;
+	top: 250px;
 	list-style-type:none; 
+	list-style-image: none;
 }
 .navigation li ul li{
-	text-align: center;
-	height: 24px;
-	line-height: 24px;
+	text-align: right;
+	height: 35px;
+	line-height: 35px;
 }
 .navigation li ul a{
 	padding: 0;
@@ -81,46 +55,53 @@ body{
 	color:#fff;
 	background: #855f50;
 }
-.center{
+#main{
+	float: left;
+	height: 2000px;
+	background: #ccf;
+	margin-bottom: 10px;
+	width: 700px;
+}
+
+#main table{
 	border:1px solid red;
-	float: right; 
-	width: 1000px;
-	position: relative;
-	left: 325px;
+	width:350px;
+	float: left;
+
 }
-
-
-
-
-
-/*页脚*/
-
-.content div{
-	border: 1px red solid;
-}
-.footer{
-	position: relative;
-	border: 1px solid red; 
-}
-.weixin{
+#main table th{
 	width: 100px;
+	height: 5px;
 }
-.message{
+.tdtext{
+	height: 50px;
+}
+#main p{
 	text-align: center;
-
+}
+#main p a{
+	text-decoration: none;
 }
 
 
-/*广告栏*/
-.right{
-	width: 150px;
-	border: 1px red solid;
-	position: fixed;
-	left: 1350px;
-	height: 300px;
-	text-align: center;
-	overflow: auto;
-	font-size: 70px;
+#rightside{
+	width: 240px;
+	text-align: right;
+	font-size: 14px;
 	color: red;
-	top: 200px;
+	float: left;
+	position: fixed;
+	left: 1110px;
+	z-index: 1;
+	padding-left: 10px;
+	top: 220px;
+}
+#close{
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+#ad{
+	width: 240px;
+	height: 339px;
 }
