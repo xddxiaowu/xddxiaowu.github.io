@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #fef7ee;
+}
+
+#container{
+	margin: 0 auto;
+	width: 1200px;
+	background: #fef7ee;
+	position: relative;
+}
+
+
+
+/*以下为对侧边导航栏的修改*/
+body{
+	overflow: hidden;
+}
+
+#nav{
+	position: relative;
+	width: 100vm;
+}
+
+#nav input{
+	/*隐藏元素*/
+	display: none;
+}
+
+#nav label{
+	position: absolute;
+	top: 0;
+	left: 70px;
+	width: 4%;
+	height: 35px;
+	padding-left: 0;
+	font-size: 30px;
+	color: #5a738e;
+	background-color: #fef7ee;
+	/*光标移入变为小手*/
+	cursor: pointer;
+	/*加入过渡*/
+	transition: all 0.5s;
+}
+
+#nav label img{
+	width: 30px;
+	height: 20px;
+}
+
+#nav ul{
+	/*去除小黑点*/
+	list-style: none;
+	width: 70px;
+	/*高度占浏览器可视区域高度*/
+	height: 100vh;
+	background-color: #2a3f54;
+}
+
+#nav ul li{
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+/*父元素第一个子元素选择器*/
+#nav ul li:first-child{
+	/*弹性布局*/
+	display: flex;
+	/*留有空白 水平居中*/
+	justify-content: center;
+	/*垂直居中*/
+	align-items: center;
+	padding:0 10px;
+}
+
+#nav ul li:first-child img{
+	width: 50px;
+	/*圆角边框*/
+	border-radius: 50%;
+}
+
+#nav ul li:first-child span{
+	/*先隐藏文字*/
+	display: none;
+	color: #fff;
+	/*文字禁止换行*/
+	white-space: nowrap;
+}
+
+#nav ul li a{
+	/*弹性布局*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*弹性盒内元素为相反顺序 即改变主轴方向 现在主轴方向向下 元素垂直排列*/
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	color: #d1d1d1;
+	/*取消文字下划线*/
+	text-decoration: none;
+}
+
+#nav ul li a i{
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+#nav ul li span{
+	font-size: 10px;
+}
+
+/*光标浮动样式*/
+#nav ul li a:hover{
+	color: #fff;
+	background-color: #35495d;
+}
+
+/*checked选择器判断复选框是否被选中 +是相邻兄弟选择器*/
+#nav input:checked+label{
+	left: 200px;
+}
+
+/*~也是兄弟选择器，但是可以找到有间隔的兄弟*/
+#nav input:checked~ul{
+	width: 200px;
+}
+
+#nav input:checked~ul li:first-child{
+	/*改变弹性项目在盒子内水平排列方式为从开头排列*/
+	justify-content: flex-start;
+}
+
+#nav input:checked~ul li:first-child span{
+	/*文字显示*/
+	display: block;
+	padding-left: 10px;
+}
+
+#nav input:checked~ul li a{
+	/*改变主轴方向为默认值 水平排列*/
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#nav input:checked~ul li a i{
+	font-size: 18px;
+	margin: 0 15px;
+}
+
+#nav input:checked~ul li a span{
+	font-size: 13px;
+}
+
+
+
+
+/*侧边导航栏修改结束*/
+
+
+
+#alternative{
+	height: 144px;
+	margin-bottom: 10px;
+	position: relative;
+}
+#logo{
+	width:100px;
+	height: 120px;
+	position: fixed;
+	left: 10px;
+	top: 35px;
+}
+.webname{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 120px;
+	font-family: "华文行楷";
+	color:#855f50;
+	text-shadow:3px 3px 5px #f0f0f0,-3px -3px 5px #f0f0f0;
+	font-size: 20px;
+}
+
+
+#seek{
+	font-size: 35px;
+	height: 40px;
+	line-height: 70px;
+	padding-bottom: 10px;	
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#seek a{
+	position: relative;
+	left: 350px;
+	top: -15px;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #6cf;
+
+}
+
+.parent{
+	position: relative;
+}
+.bts{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 18px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	position: absolute;
+}
+.btn {
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	background: url("../images/search.svg") no-repeat;
+	top: 6px;
+	left: 280px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#welcome{
+	color: #6cf;
+	font-size: 30px;
+	text-align: left;
+}
+#welcome a{
+	text-decoration: none;
+	color: #6cf;
+}
+#footer{
+	clear: both;
+	width:;
+	background: #fef7ee;
+	margin-bottom: 10px;
+	position: relative;
+}
+.weixin{
+	width: 100px;
+	padding-top: 10px;
+}
+.message{
+	text-align: center;
+}
+#footer ul{
+	list-style-position: inside;
+	position: relative;
+	left: 10px;
+}
+#footer p{
+	text-align: center;
+}
+.clear{
+	clear: both;
+}

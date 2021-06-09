@@ -1,0 +1,21 @@
+.login{
+	width: 900px;
+	margin:0 auto;
+	text-align: center;
+}
+.login form input{
+	height: 40px;
+	width: 400px;
+	border-radius: 18px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 20px;	
+}
+.login form div{
+	margin-top: 25px;
+}
+#btn{
+	width: 200px;
+	padding-left: 0;
+	background: #6cf;
+}

@@ -1,0 +1,107 @@
+#leftside{
+	width: 240px;
+	margin-right: 10px;
+	float: left;
+	background: #fef7ee;
+}
+.login{
+	font-family: "宋体";
+	font-size: 35px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.login a{
+	color: #808080;
+	text-decoration: none;
+
+}
+.navigation{
+	list-style-type: none;
+	list-style-image: url(../images/nav.svg);
+	padding-left:30px;
+	font-size: 25px;
+	line-height: 200%;
+	letter-spacing: 0.1em;
+	text-align: left;
+	
+}
+.navigation a{
+	text-decoration: none;
+	color: #855f50;
+}
+.navigation li ul{
+	display: none;
+	background: #fff;
+	position: absolute;
+	left:-130px;
+	top: 250px;
+	list-style-type:none; 
+	list-style-image: none;
+}
+.navigation li ul li{
+	text-align: right;
+	height: 35px;
+	line-height: 35px;
+}
+.navigation li ul a{
+	padding: 0;
+}
+.navigation li:hover ul{
+	display: block;
+}
+.navigation li ul a:hover{
+	color:#fff;
+	background: #855f50;
+}
+#main{
+	float: left;
+	height: 2000px;
+	background: #ccf;
+	margin-bottom: 10px;
+	width: 700px;
+}
+
+#main table{
+	border:1px solid red;
+	width:350px;
+	float: left;
+
+}
+#main table th{
+	width: 100px;
+	height: 5px;
+}
+.tdtext{
+	height: 50px;
+}
+#main p{
+	text-align: center;
+}
+#main p a{
+	text-decoration: none;
+}
+
+
+#rightside{
+	width: 240px;
+	text-align: right;
+	font-size: 14px;
+	color: red;
+	float: left;
+	position: fixed;
+	left: 1110px;
+	z-index: 1;
+	padding-left: 10px;
+	top: 220px;
+}
+#close{
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+#ad{
+	width: 240px;
+	height: 339px;
+}
