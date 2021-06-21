@@ -1,0 +1,65 @@
+/*小水球动画*/
+.a,.wave{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 27%;
+	transform: translate(-50%,-50%);
+}
+.wave{
+	background-color: darkturquoise;
+	overflow: hidden;
+}
+.wave:after{
+	content: "";
+	width: 110px;
+	height: 110px;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	left: 50%;
+	top: ;
+	transform: translate(-50%,-60%);
+	border-radius: 40%;
+	animation: wave 5s linear infinite;
+	text-transform: uppercase;
+}
+.wave::before{
+	content: "登录";
+	position: absolute;
+	left: 50%;
+	color: darkturquoise;
+	z-index: 99;
+	transform: translate(-50%,20px);
+}
+@keyframes wave{
+	100%{
+		transform: translate(-50%,-60%) rotate(360deg);
+	}
+}
+
+/*动画实现结束*/
+
+
+.login{
+	width: 900px;
+	margin:0 auto;
+	text-align: center;
+}
+.login form input{
+	height: 40px;
+	width: 400px;
+	border-radius: 18px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 20px;	
+}
+.login form div{
+	margin-top: 25px;
+}
+#btn{
+	width: 200px;
+	padding-left: 0;
+	background: #6cf;
+}

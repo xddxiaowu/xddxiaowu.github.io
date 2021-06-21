@@ -1,0 +1,12 @@
+#welcome{
+	width: 200px;
+	border:1px solid red;
+	font-size: 20px;
+}
+.one{
+	color: red;
+}
+.two{
+	width: 200px;
+	border: 1px solid red;
+}

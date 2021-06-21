@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #99ccff;
+}
+
+#container{
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #99ccff;
+	position: relative;
+}
+
+
+#nav{
+	height: 144px;
+	background-color:: #339999;
+	margin-bottom: 10px;
+	position: fixed;
+	z-index: 1;
+}
+
+#nav ul li{
+		float: left;
+		list-style-type:none; 
+		width: 200px;
+		text-align: center;
+		background: #fff;
+}
+#nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #66cccc;
+	padding: 35px 10px 30px;
+}
+#nav ul li a:hover{
+	background: #339999 ;
+	color: #fff;
+	background-size: 255px 110px;
+}
+
+
+
+
+#alternative{
+	background-color: #339999;
+	height: 144px;
+	margin-bottom: 10px;
+	position: relative;
+}
+#logo{
+	width:120px;
+	height: 145px;
+	position: fixed;
+	left: 20px;
+	top:50px;
+}
+.webname{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 120px;
+	font-family: "华文行楷";
+	color:#855f50;
+	text-shadow:3px 3px 5px #f0f0f0,-3px -3px 5px #f0f0f0;
+	font-size: 20px;
+}
+
+
+#seek{
+	font-size: 35px;
+	height: 40px;
+	line-height: 70px;
+	padding-bottom: 10px;	
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#seek a{
+	position: relative;
+	left: 350px;
+	top: -15px;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #339999;
+
+}
+
+.parent{
+	position: relative;
+}
+.bts{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 18px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	position: absolute;
+}
+.btn {
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	background: url("../images/search.svg") no-repeat;
+	top: 6px;
+	left: 280px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#welcome{
+	color: #6cf;
+	font-size: 30px;
+	text-align: left;
+}
+#welcome a{
+	text-decoration: none;
+	color: #6cf;
+}
+#footer{
+	clear: both;
+	width:;
+	background: #99ccff;
+	margin-bottom: 10px;
+	position: relative;
+}
+.weixin{
+	width: 100px;
+	padding-top: 10px;
+}
+.message{
+	text-align: center;
+}
+#footer ul{
+	list-style-position: inside;
+	position: relative;
+	left: 10px;
+}
+#footer p{
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
