@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<ul>
+				<li><a href="homepage.php">Home<br>首页</a></li>
+				<li><a href="#">Lost<br>失物</a></li>
+				<li><a href="#">Found<br>寻物</a></li>
+				<li><a href="#">Business cooperation<br>商务合作</a></li>
+				<li><a href="#">Help<br>帮助</a></li>
+				<li><a href="#">About us<br>关于我们</a></li>
+				<br>
+			</ul>		
+		</div>
+
+
+		<div id="alternative">
+			<div id="logo">
+				<a href="homepage.php">
+				<img src="images/logo.gif" alt="">
+				<div class="webname">Lost and Found失物招领</div>
+				</a>	
+			</div>		
+		</div>
+
+
+		<div id="seek">
+			<form action="" class="parent">
+				<div id="search">
+				<input type="text" name="search" placeholder="请输入关键字" class="bts">
+				<input type="button" name="" id="" class="btn">
+				</div>
+			</form>
+		</div>	
+
+	
+		<div class="register">
+        	<div class="a">
+                 <div class="wave"></div>
+            </div>
+			<hr>
+			<form action="php/regcheck.php" method="post">
+				<div class="username">
+					<input type="text" placeholder="请输入您的用户名" name="username"/>
+				</div>
+				<div class="email">
+					<input type="text" placeholder="请输入您的邮箱" name="email">
+				</div>
+				<div class="password">
+					<input type="password" placeholder="请输入您的密码" name="password">
+				</div>
+				<div class="repassword">			
+					<input type="password" placeholder="确认密码" name="repassword">		
+				</div>
+				<div>
+					<input type="submit" value="立即注册" id="btn" name="submit">
+				</div>
+			</form>
+        <div>已有账号？<a href="login.html" class="pleaselogin">请登录</a></div><br>
+		<div>*点击"注册"按钮,即表示您同意并愿意遵守用户协议.</div>
+	</div>
+	
+
+
+
+
+
+
+	<div id="footer">
+			<div class="message">
+				<img src="images/weixin.png" class="weixin" alt="">
+				<br>官方微信
+			</div>
+			<br>
+			<hr>
+			<ul>
+				<li>Lost and Found失物招领 华东理工大学</li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+			<hr>
+			<p>华东理工大学版权所有</p>
+			<p>©Copyright2021 Lost and Found.com. All Rights Reserved.</p>
+	</div>	
+</body>
+</html>

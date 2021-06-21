@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<ul>
+				<li><a href="homepage.php">Home<br>首页</a></li>
+				<li><a href="#">Lost<br>失物</a></li>
+				<li><a href="#">Found<br>寻物</a></li>
+				<li><a href="#">Business cooperation<br>商务合作</a></li>
+				<li><a href="#">Help<br>帮助</a></li>
+				<li><a href="#">About us<br>关于我们</a></li>
+				<br>
+			</ul>		
+		</div>
+		<div id="alternative">
+			<div id="logo">
+				<a href="homepage.php">
+				<img src="images/logo.gif" alt="">
+				<div class="webname">Lost and Found失物招领</div>
+				</a>	
+			</div>		
+		</div>
+		<div id="seek">
+			<form action="" class="parent">
+				<div id="search">
+				<input type="text" name="search" placeholder="请输入关键字" class="bts">
+				<input type="button" name="" id="" class="btn">
+				</div>
+			</form>
+		</div>	
+
+		<div class="login">
+			<div class="a">
+				<div class="wave"></div>
+			</div>
+			<br>
+			<hr>
+			<form action="php/logcheck.php" method="post">
+				<div class="email">
+					<input type="text" placeholder="请输入您的邮箱" name="email">
+				</div>
+
+				<div class="password">
+					<input type="password" placeholder="请输入您的密码" name="password">
+				</div>
+				<div>
+					<input type="submit" value="登录" id="btn" name="submit">
+					<input type="button" value="注册" id="btn" onclick="location='register.html'">
+				</div>			
+			</form>
+			<br>
+			<div>*点击"登录"按钮,即表示您同意并愿意遵守用户协议.</div>
+			<br>
+			<hr>
+		</div>
+
+		<div id="footer">
+			<div class="message">
+				<img src="images/weixin.png" class="weixin" alt="">
+				<br>官方微信
+			</div>
+			<br>
+			<hr>
+			<ul>
+				<li>Lost and Found失物招领 华东理工大学</li>
+				<li></li>
+				<li></li>
+			</ul>
+			<hr>
+			<p>华东理工大学版权所有</p>
+			<p>©Copyright2021 Lost and Found.com. All Rights Reserved.</p>
+		</div>		
+</body>
+</html>
